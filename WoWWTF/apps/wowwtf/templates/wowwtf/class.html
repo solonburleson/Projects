@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>What To Farm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://static-azeroth.cursecdn.com/current/js/syndication/tt.js"></script>
+    <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+    <script src="http://wow.zamimg.com/widgets/power.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'wowwtf/css/style.css' %}">
+    <script src="{% static 'wowwtf/js/main.js' %}"></script>
+</head>
+<body>
+    <div class="jumbotron bg-dark">
+        <a href="/"><h1>WoW WTF</h1>
+        <h2>World of Warcraft What to Farm</h2></a>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Classes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="dk">Death Knight</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item dk" href="#">Blood</a>
+                    <a class="dropdown-item dk" href="#">Frost</a>
+                    <a class="dropdown-item dk" href="#">Unholy</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="dh">Demon Hunter</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item dh" href="/havoc">Havoc</a>
+                    <a class="dropdown-item dh" href="#">Vengeance</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="druid">Druid</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item druid" href="#">Balance</a>
+                    <a class="dropdown-item druid" href="#">Feral</a>
+                    <a class="dropdown-item druid" href="#">Guardian</a>
+                    <a class="dropdown-item druid" href="#">Restoration</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="hunter">Hunter</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item hunter" href="#">Beast Master</a>
+                    <a class="dropdown-item hunter" href="#">Marksman</a>
+                    <a class="dropdown-item hunter" href="#">Survival</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mage">Mage</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item mage" href="#">Arcane</a>
+                    <a class="dropdown-item mage" href="#">Fire</a>
+                    <a class="dropdown-item mage" href="#">Frost</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="monk">Monk</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item monk" href="#">Brewmaster</a>
+                    <a class="dropdown-item monk" href="#">Mistweaver</a>
+                    <a class="dropdown-item monk" href="#">Windwalker</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="pally">Paladin</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item pally" href="#">Holy</a>
+                    <a class="dropdown-item pally" href="#">Protection</a>
+                    <a class="dropdown-item pally" href="#">Retribution</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="priest">Priest</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item priest" href="#">Discipline</a>
+                    <a class="dropdown-item priest" href="#">Holy</a>
+                    <a class="dropdown-item priest" href="#">Shadow</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="rogue">Rogue</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item rogue" href="#">Assassination</a>
+                    <a class="dropdown-item rogue" href="#">Outlaw</a>
+                    <a class="dropdown-item rogue" href="#">Subtlety</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="shaman">Shaman</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item shaman" href="#">Elemental</a>
+                    <a class="dropdown-item shaman" href="#">Enhancement</a>
+                    <a class="dropdown-item shaman" href="#">Restoration</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="lock">Warlock</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item lock" href="#">Affliction</a>
+                    <a class="dropdown-item lock" href="#">Demonology</a>
+                    <a class="dropdown-item lock" href="#">Destruction</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="warrior">Warrior</span>
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item warrior" href="#">Arms</a>
+                    <a class="dropdown-item warrior" href="#">Fury</a>
+                    <a class="dropdown-item warrior" href="#">Protection</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <select name="category" class="form-control mr-sm-2" aria-label="Search">
+                    <option value="1">Patchwork</option>
+                    <option value="2">Hectic Add Cleave</option>
+                </select>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+            </form>
+        </div>
+    </nav>
+    <div id="body">
+        <h3 class="text-center mt-5"> Desired Stat Points</h3>
+        <h5 class="text-center">Simmed by <a class="website" href="https://bloodmallet.com/index.html#demon_hunter_havoc?data_view=secondary_distributions">Bloodmallet</a></h5>
+        <table id="stats" class="my-3">
+            <thead>
+                <td></td>
+                <th>Total</th>
+                <th>Percentage</th>
+            </thead>
+           <tr>
+               <th>Crit</th>
+               <td>900</td>
+               <td>30%</td>
+           </tr>
+           <tr>
+                <th>Haste</th>
+                <td>1200</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>Mastery</th>
+                <td>300</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <th>Versatility</th>
+                <td>600</td>
+                <td>20%</td>
+            </tr>
+        </table>
+        <h2 class="text-center mt-5">Recommended Gear</h2>
+        {% for i in gearset %}
+            {{i.header}}
+            {{i.place}}
+            {{i.itemID}}
+            {{i.tableloc}}
+            {{i.spec}}
+            {{i.category}}
+        {% endfor %}
+        <script>gear({{gearset|safe}})</script>
+        <div id="gear">
+            <table id="gl" class="d-inline-block align-top">
+                <tr id="head">
+                </tr>
+                <tr id="neck">
+                </tr>
+                <tr id="shoulders">
+                </tr>
+                <tr id="cloak">
+                </tr>
+                <tr id="chest">
+                </tr>
+                <tr id="wrists">
+                </tr>
+                <tr id="mh">
+                </tr>
+                <tr id="oh">
+                </tr>
+            </table>
+            <table class="d-inline-block align-top text-right">
+                <tr id="hands">
+                </tr>
+                <tr id="waist">
+                </tr>
+                <tr id="legs">
+                </tr>
+                <tr id="boots">
+                </tr>
+                <tr id="ring1">
+                </tr>
+                <tr id="ring2">
+                </tr>
+                <tr id="trink1">
+                </tr>
+                <tr id="trink2">
+                </tr>
+            </table>
+        </div>
+        <div class="text-center">
+            <form>
+                <label for="slot">Slot:</label>
+                <select name="slot">
+                    <option value="head">Head</option>
+                    <option value="shoulders">Shoulders</option>
+                    <option value="cloak">Cloak</option>
+                    <option value="chest">Chest</option>
+                    <option value="wrists">Wrists</option>
+                    <option value="mh">Main Hand</option>
+                    <option value="oh">Off Hand</option>
+                    <option value="hands">Hands</option>
+                    <option value="waist">Waist</option>
+                    <option value="legs">Legs</option>
+                    <option value="boots">Boots</option>
+                    <option value="ring1">Ring1</option>
+                    <option value="ring2">Ring2</option>
+                    <option value="trink1">Trink1</option>
+                    <option value="trink2">Trink2</option>
+                </select>
+                <label for="itemID">Item ID:</label>
+                <input type="text" name="itemID">
+                <input type="submit">
+            </form>
+        </div>
+        <div class="text-center">
+            <h3>Replacements</h3>
+            <p>A decent replacement for the <a href="https://www.wowdb.com/items/160645-rot-scour-ring">Rot-Scour Ring</a> ring is the <a href="https://www.wowdb.com/items/159461-band-of-the-ancient-dredger">Band of the Ancient Dredger</a> from the Siege of Boralus dungeon.</p>
+            <p>If you don't want to spend gold or cannot craft a <a href="https://www.wowdb.com/items/159125-darkmoon-deck-fathoms">Darkmoon Deck: Fathoms</a> the best option to replace it is the <a href="https://www.wowdb.com/items/159628-kul-tiran-cannonball-runner">Kul Tiran Cannonball Runner</a> from Tol Dagor.</p>
+            <p>Unfortunately for azerite traits most of the raid traits are the highest dps traits so there are only 4 chances at them per week, but the priority weekly bosses are:</p>
+            <ul class="list-unstyled mb-5">
+                <li>Mythrax</li>
+                <li>Fetid Devourer</li>
+            </ul>
+            <h3>Best Places to Farm</h3>
+            <ul class="list-unstyled">
+                <li>MOTHERLODE!! (ST: 3 pieces)</li>
+                <li>Tol Dagor (ST: 2 pieces + 1)</li>
+                <li>Kings Rest (ST: 2 pieces)</li>
+                <li>Underrot (ST: 2 pieces)</li>
+                <li>Optional: Seige of Boralus (ST: 1 piece)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

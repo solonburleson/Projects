@@ -1,0 +1,74 @@
+/* *{ 
+    outline: 1px solid black;
+} */
+.dk{
+    color: #C41F3B;
+}
+.dh{
+    color: #A330C9;	
+}
+.druid{
+    color: #FF7D0A;
+}
+.hunter{
+    color: #ABD473;
+}
+.mage{
+    color: #40C7EB;
+}
+.monk{
+    color: #00FF96;
+}
+.pally{
+    color: #F58CBA;
+}
+.priest{
+
+    color: #FFFFFF;
+}
+.rogue{
+    color: #FFF569;
+}
+.shaman{
+    color: #0070DE;
+}
+.lock{
+    color: #8787ED;
+}
+.warrior{
+    color: #C79C6E;
+}
+.jumbotron{
+    margin-bottom: 0;
+    border-radius: 0;
+    color: white;
+}
+#stats{
+    margin: 0 32%;
+    width: 45%;
+}
+#gear{
+    width: 100%;
+}
+a{
+    color: #a335ee;
+    font-weight: bold;
+}
+#gl{
+    margin-right: 10%;
+}
+#gear{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 0 25% 5%;
+    display: inline-block;
+    width: 50%;
+}
+.website{
+    color: blue;
+}
+
+.jumbotron a{
+    color: white;
+    text-decoration: none;
+}
